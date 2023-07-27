@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>White Castle</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/img/WC_favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Simple line icons-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css"
+        rel="stylesheet" />
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic"
+        rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="styles.css">
+
+
+</head>
+
+
+    <body id="page-top">
+
+
+
+
+  
+    <header class="masthead d-flex align-items-center">
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="assets/img/114092.webp" class="d-block " alt="Image 1">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/img/NINTCHDBPICT000727322566 (1).jpg" class="d-block w-100" alt="Image 2">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/img/Lee-Allgood-Spy.jpg" class="d-block w-100" alt="Image 3">
+            </div>
+        </div>
+    </div>
+    <div class="container px-5 px-lg-4 text-center">
+        <img src="assets/img/White_Castle_logo (1).png" class="zuka_front" alt="Agent Photograph">
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+</header>
+<div class="container-fluid">
+    <!-- Header -->
+    <br>
+    <br>
+    <h1 class="text-center">ID Card Generator</h1>
+    <br>
+    <br>
+    <br>
+    <h3 class="text-info">Client information:</h3>
+    <br>
+    <table class="table">
+
+        
+            <th>
+                <label for="lastname">Last Name:</label>
+                <input type="text" id="lastname" name="lastname">
+            </th>
+            <th>
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName">
+            </th>
+            <th>
+                <label for="gender">Gender:</label>
+                <input type="text" id="gender" name="gender">
+            </th>
+            <th>
+                <label for="height">Height:</label>
+                <input type="text" id="height" name="height">
+            </th>
+            <th>
+                <label for="birthDate">Birth Date:</label>
+                <input type="text" id="birthDate" name="birthDate">
+            </th>
+            <br>
+    </table>
+    <br>
+    <br>
+</div>
+<div id="createCC">
+    <div style="margin-right:10px;">
+        <input type="button" class="btn btn-danger" value="GENERATE ID CARD" onclick="drawCanvas()">
+    </div>
+    <div style="margin-left: 10px;">
+        <input type="button" class="btn btn-primary" value="BACK TO HOMEPAGE" onclick="window.location.href='../HomePage/index.html'">
+    </div>
+</div>
+<br>
+<br>
+<br>
+
+<div id="canvas-container">
+    <canvas id="demo"></canvas>
+</div>
+<div id="createCC"><button id="download-btn">Download as JPEG</button></div>
+
+<script src="script.js"></script>
+
+<br>
+<br>
+
+<footer class="py-3 my-4">
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-itemm"><a href="copyright_claims.html" class="nav-link px-2 text-body-secondary">Copyright
+                Claims</a></li>
+        <li class="nav-itemm"><a href="privacy_policy.html" class="nav-link px-2 text-body-secondary">Privacy
+                Policy</a></li>
+        <li class="nav-itemm"><a href="terms_of_service.html" class="nav-link px-2 text-body-secondary">Terms of
+                Service</a></li>
+    </ul>
+    <p class="text-center text-body-secondary">© 2023 White Castle, Inc</p>
+</footer>
+<a class="scroll-to-top rounded" href="#page-top"><i class="fas fa-angle-up"></i></a>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Core theme JS-->
+<script src="scripts.js"></script>
+  </body>
+</html>

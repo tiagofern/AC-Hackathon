@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>White Castle</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/img/WC_favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Simple line icons-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css"
+        rel="stylesheet" />
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic"
+        rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" href="styles.css">
+       
+</head>
+
+<body id="page-top">
+
+    <!-- Navigation-->
+    <a class="menu-toggle rounded" href="#"><i class="fas fa-bars"></i></a>
+    <nav id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <li class="sidebar-brand"><a href="#page-top">Menu</a></li>
+            <li class="sidebar-nav-item"><a href="../HomePage/index.html">Home</a></li>
+            <li class="sidebar-nav-item"><a href="../ListAgents/index.html">Agents</a></li>
+            <li class="sidebar-nav-item"><a href="../ID Generator/createCC.html">Fake I.D. Generator</a></li>
+            <li class="sidebar-nav-item"><a href="../Login/login.html">Log out</a></li>
+        </ul>
+    </nav>
+    
+
+    <!-- Header -->
+<header class="masthead d-flex align-items-center">
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="../assets/img/114092.webp" class="d-block w-100" alt="Image 1">
+            </div>
+            <div class="carousel-item">
+                <img src="../assets/img/NINTCHDBPICT000727322566 (1).jpg" class="d-block w-100" alt="Image 2">
+            </div>
+            <div class="carousel-item">
+                <img src="../assets/img/Lee-Allgood-Spy.jpg" class="d-block w-100" alt="Image 3">
+            </div>
+        </div>
+    </div>
+
+    <div class="container px-5 px-lg-4 text-center">
+        <img src="../assets/img/White_Castle_logo (1).png" class="zuka_front" alt="Agent Photograph">
+        
+        <br>
+        <br>
+        <br>
+        
+        <br>
+    </div>
+</header>
+
+
+    <div class="container">
+        <h1 class="my-4">Your awesome agents</h1>
+        <div id="agents-list">
+            
+            <button id="add-agent-btn" class="btn btn-success my-2">+ Add Agent</button>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Mission Place</th>
+                        <th>Specialty</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="agents-table-body">
+                </tbody>
+            </table>
+        </div>
+
+
+
+        <div id="add-agent-form" style="display:none;">
+            <h2>Add Agent</h2>
+            <form>
+                <div class="form-group">
+                    <label for="agent-photo">Photo:</label>
+                    <input type="file" class="form-control-file" id="agent-photo">
+                    <img id="agent-photo-preview" src="" alt="Foto do agente" style="display: none; max-width: 200px; max-height: 200px; margin-top: 10px;">
+                </div>                
+                
+                <div class="form-group">
+                    <label for="agent-name">Name:</label>
+                    <input type="text" class="form-control" id="agent-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="agent-age">Age:</label>
+                    <input type="number" class="form-control" id="agent-age" required>
+                </div>
+                <div class="form-group">
+                    <label for="mission">Mission Place:</label>
+                    <input type="text" class="form-control" id="mission" required>
+                </div>
+                <div class="form-group">
+                    <label for="special">Specialty:</label>
+                    <select class="form-control" id="special" required>
+                        <option value="">Select a mission name</option>
+                        <option value="Theft">Theft</option>
+                        <option value="Sabotage">Sabotage</option>
+                        <option value="Assassination">Assassination</option>
+                        <option value="Infiltration">Infiltration</option>
+                        <option value="Sniper">Sniper</option>
+                        <!-- Add more options as needed -->
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-success">Save</button>
+                <button type="button" id="cancel-btn" class="btn btn-danger">Cancel</button>
+            </form>
+        </div>
+    </div>
+
+    <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-itemm"><a href="copyright_claims.html" class="nav-link px-2 text-body-secondary">Copyright
+                    Claims</a></li>
+            <li class="nav-itemm"><a href="privacy_policy.html" class="nav-link px-2 text-body-secondary">Privacy
+                    Policy</a></li>
+            <li class="nav-itemm"><a href="terms_of_service.html" class="nav-link px-2 text-body-secondary">Terms of
+                    Service</a></li>
+        </ul>
+        <p class="text-center text-body-secondary">© 2023 White Castle, Inc</p>
+    </footer>
+
+    <a class="scroll-to-top rounded" href="#page-top"><i class="fas fa-angle-up"></i></a>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="scripts.js"></script>
+</body>
+
+</html>
